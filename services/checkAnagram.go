@@ -39,7 +39,7 @@ func CheckAnagram(c echo.Context) error {
 	}
 
 	if len(ac.WordOne) < 3 || len(ac.WordOne) > 24 {
-		ac.Message = "Lenght of word one must be greater than 3 and less than 24 characters"
+		ac.Message = "Length of word one must be greater than 3 and less than 24 characters"
 		data := echo.Map{
 			"isAnagram": ac.IsAnagram,
 			"message":   ac.Message,
@@ -48,7 +48,7 @@ func CheckAnagram(c echo.Context) error {
 	}
 
 	if len(ac.WordTwo) < 3 || len(ac.WordTwo) > 24 {
-		ac.Message = "Lenght of word two must be greater than 3 and less than 24 characters"
+		ac.Message = "Length of word two must be greater than 3 and less than 24 characters"
 		data := echo.Map{
 			"isAnagram": ac.IsAnagram,
 			"message":   ac.Message,
