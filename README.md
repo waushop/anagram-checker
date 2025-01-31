@@ -63,15 +63,4 @@ docker-compose up
 - Application starts on port 9000
 - Endpoints are secured with Basic Auth, default credentials are user: admin and password: password.
 - Words to compare have to be alphanumeric, minimum 3 and maximum 24 characters.
-
-## Technologies used
-
-- Golang
-- Echo Framework
-- Basic Auth
-- Echo Template
-- Docker
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+- Request logging is enabled by default.

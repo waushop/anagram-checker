@@ -18,7 +18,8 @@ func main() {
 
 	e.Renderer = echotemplate.Default()
 
-	//e.Use(middleware.Logger())
+	// Enable request logging middleware
+	e.Use(middleware.Logger())
 
 	e.Use(middleware.BasicAuth(func(username, password string, c echo.Context) (bool, error) {
 		if subtle.ConstantTimeCompare([]byte(username), []byte("admin")) == 1 &&
